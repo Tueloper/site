@@ -1,6 +1,6 @@
-import { createMuiTheme, responsiveFontSizes } from '@material-ui/core/styles';
+// import { createMuiTheme, responsiveFontSizes } from '@material-ui/core/styles';
 
-let themeLight = createMuiTheme({
+let theme = {
     palette: {
         // type: 'light',
         background: {
@@ -20,9 +20,9 @@ let themeLight = createMuiTheme({
         },
         contrastThreshold: 3,
         tonalOffset: 0.2,
-        // background: {
-        //     paper: "#272c34"
-        // }
+        background: {
+            paper: "#272c34"
+        }
     },
     typography: {
         fontFamily: [
@@ -62,8 +62,8 @@ let themeLight = createMuiTheme({
             xl: 1920,
         },
     }
-});
+};
 
-themeLight = responsiveFontSizes(themeLight);
+// theme = responsiveFontSizes(theme);
 
-export default themeLight;
+export default theme;
